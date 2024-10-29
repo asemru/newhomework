@@ -1,0 +1,21 @@
+{% extends "menu.html" %}
+
+{% block pagename %}
+<h1>Видеоигры</h1>
+{% endblock %}
+
+{% block menu %}
+{{ block.super }}
+{% endblock %}
+
+{% block content %}
+<ul>
+    {% for i in context %}
+        <li>{{ i }}</li>
+    {% endfor %}
+</ul>
+<h1>{{ text }}</h1>
+<br><button><a href="http://127.0.0.1:8000/">Назад</a></button>
+{% endblock %}
+
+
