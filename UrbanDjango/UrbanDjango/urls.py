@@ -20,14 +20,17 @@ from django.contrib import admin
 from django.urls import path
 from django.views.generic import TemplateView
 from task4.views import index
+from task5.views import main
 
 urlpatterns = [
-    path('admin/', admin.site.urls),
-    path('', TemplateView.as_view(template_name='menu.html')),
-    path('books/', TemplateView.as_view(template_name='books.html')),
-    #path('games/', TemplateView.as_view(template_name='videogames.html')),
-    path('games/', index, name='games'),
-    path('ok/', TemplateView.as_view(template_name='of couse.html')),
-    path('opana/', TemplateView.as_view(template_name='opana.html')),
-    path('magas/', TemplateView.as_view(template_name='magazin.html'))
+    #path('admin/', admin.site.urls),
+    #
+    #path('', TemplateView.as_view(template_name='menu.html')),
+    #path('books/', TemplateView.as_view(template_name='books.html')),
+    ##path('games/', TemplateView.as_view(template_name='videogames.html')),
+    #path('games/', index, name='games'),
+    #path('ok/', TemplateView.as_view(template_name='of couse.html')),
+    #path('opana/', TemplateView.as_view(template_name='opana.html')),
+    #path('magas/', TemplateView.as_view(template_name='magazin.html'))
+    path('', main, name='main'),
 ]
