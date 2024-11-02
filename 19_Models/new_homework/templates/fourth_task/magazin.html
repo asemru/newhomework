@@ -1,0 +1,19 @@
+{% extends "menu.html" %}
+
+{% block pagename %}
+<h1>Магазин продуктов</h1>
+{% endblock %}
+
+{% block menu %}
+    {{ block.super }}
+{% endblock %}
+
+{% block content %}
+<ul>
+    <li><a href="http://127.0.0.1:8000/ok">Яйца</a></li>
+    <li><a href="http://127.0.0.1:8000/ok">Хлеб</a></li>
+    <li><a href="http://127.0.0.1:8000/ok">Молоко</a></li>
+    <li><a href="http://127.0.0.1:8000/ok">Рис</a></li>
+</ul>
+<br><button><a href="http://127.0.0.1:8000/">Назад</a></button>
+{% endblock %}

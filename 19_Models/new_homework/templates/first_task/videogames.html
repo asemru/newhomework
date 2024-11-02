@@ -1,0 +1,20 @@
+{% extends "menu.html" %}
+
+{% block pagename %}
+<h1 xmlns="http://www.w3.org/1999/html" xmlns="http://www.w3.org/1999/html">Видеоигры</h1>
+{% endblock %}
+
+{% block menu %}
+{{ block.super }}
+{% endblock %}
+
+{% block content %}
+<ul>
+    {% for i in all %} <!-- Автор забыл поставить кнопки для этого списка) -->
+    <li>{{ i.title}} | {{i.description}}. {{i.cost}} <button>Купить</button> </li>
+    {% endfor %}
+</ul>
+<br><button><a href="http://127.0.0.1:8000/menu">Назад</a></button>
+{% endblock %}
+
+
